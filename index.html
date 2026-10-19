@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineMatch - Movie Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav"><div class="logo">🎬 Cine<span>Match</span></div></header>
+
+  <section class="hero">
+    <h1>Agli movie kaunsi dekhein?</h1>
+    <p>Ek pasandida movie chunein, hum milti-julti movies dhundh denge.</p>
+    <div class="search">
+      <input id="searchInput" type="text" placeholder="Movie ka naam likhein, jaise Avatar" autocomplete="off">
+      <ul id="suggestions" class="suggestions" hidden></ul>
+    </div>
+  </section>
+
+  <main>
+    <section id="resultSection" hidden>
+      <h2>Aapki chuni hui movie</h2>
+      <div id="selected"></div>
+      <h2>Aapko ye bhi pasand aayengi</h2>
+      <div id="results" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>Top rated movies</h2>
+      <div id="popular" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>This product uses the TMDB API but is not endorsed or certified by TMDB.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
