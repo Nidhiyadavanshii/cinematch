@@ -23,16 +23,18 @@ Pick a movie you love and get 5 similar movies, with posters, ratings and detail
 
 <table>
   <tr>
-    <td align="center"><b>Search with suggestions</b><br><img src="screenshots/search.png" alt="Search" width="100%"></td>
-    <td align="center"><b>Recommendations</b><br><img src="screenshots/results.png" alt="Results" width="100%"></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2"><b>Mobile view</b><br><img src="screenshots/mobile.png" alt="Mobile" width="300"></td>
+    <td align="center">
+      <b>Search with suggestions</b><br>
+      <img src="Screenshot%202026-10-19%20221749.png" alt="Movie search suggestions" width="100%">
+    </td>
+    <td align="center">
+      <b>Movie details and recommendations</b><br>
+      <img src="Screenshot%202026-10-19%20220649.png" alt="Movie details and recommendations" width="100%">
+    </td>
   </tr>
 </table>
 
 ---
-
 ## ✨ Features
 
 - 🔍 Live search suggestions (keyboard arrows and Enter supported)
