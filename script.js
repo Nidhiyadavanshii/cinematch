@@ -20,7 +20,7 @@ fetch("movies.json")
     showPopular();
   })
   .catch(() => {
-    popularBox.textContent = "movies.json load nahi hui. Website ko 'python -m http.server 8000' se chalayein.";
+    popularBox.textContent = "Could not load movies.json. Please run the site with 'python -m http.server 8000'.";
     popularBox.className = "error";
   });
 
