@@ -3,31 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CineMatch - Movie Recommender</title>
+  <title> 🎬 CineMatch | Find your next favorite movie</title>
+  <meta name="description" content="Search any movie and get five similar picks based on genre, cast, director and plot.">
+  <meta name="theme-color" content="#0d1016">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav"><div class="logo">🎬 Cine<span>Match</span></div></header>
+  <header class="nav">
+    <div class="logo">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0d1016"/><rect x="4" y="4" width="56" height="56" rx="11" fill="none" stroke="#f2b441" stroke-width="3"/><path d="M26 20v24l20-12z" fill="#f2b441"/></svg>
+      <div>Cine<span>Match</span></div>
+    </div>
+  </header>
 
   <section class="hero">
-    <h1>Agli movie kaunsi dekhein?</h1>
-    <p>Ek pasandida movie chunein, hum milti-julti movies dhundh denge.</p>
+    <h1>Find your next favorite movie</h1>
+    <p>Search any title and get similar picks, based on genre, cast, director and plot.</p>
     <div class="search">
-      <input id="searchInput" type="text" placeholder="Movie ka naam likhein, jaise Avatar" autocomplete="off">
+      <input id="searchInput" type="text" placeholder="Search a movie, e.g. Inception" autocomplete="off" aria-label="Search for a movie">
       <ul id="suggestions" class="suggestions" hidden></ul>
     </div>
   </section>
 
   <main>
     <section id="resultSection" hidden>
-      <h2>Aapki chuni hui movie</h2>
+      <h2>Your pick</h2>
       <div id="selected"></div>
-      <h2>Aapko ye bhi pasand aayengi</h2>
+      <h2>Similar movies</h2>
       <div id="results" class="grid"></div>
     </section>
 
     <section>
-      <h2>Top rated movies</h2>
+      <h2>Top rated</h2>
       <div id="popular" class="grid"></div>
     </section>
   </main>
